@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0"
+    <meta name="description" content="Una aplic<acion web progresiva para tomar notas">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css"> <!-- Archivo de estilos externo -->
+    <title>Notas PWA</title>
+     
+</head>
+<body>
+    <!-- Header con título principal -->
+     <header>
+        <h1>Mi Aplicación de Notas</h1>
+        <p>Organiza tus ideas fácilmente</p>   
+    </header>
+    
+    <!-- Registrar el Service Worker para habilitar la funcionalidad offline -->
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+           .then(function(registration) {
+             console.log('El service Worker ha sido registrado con éxito:',
+    registration);
+    })
+        .catch(function(error) {
+        console.log('Error en el registro del Service Worker:', error);
+       });
+    }
+    </script>
+
+    <!-- Sección principal con el formulario centrado -->  
+<main>
+    <div class="form-container">
+        <form id="noteForm">
+         <label for="noteInput">Escribe tu nota:</label>
+        <textarea id="noteInput" placeholder="Escribe aqui..." rows="4"></textarea>  
+         <button type="submit">Agregar Nota</button>
+    </form>  
+        <div id="notesContainer"></div>    
+        </div>        
+</main>
+
+<!-- Footer con derechos reservados-->
+<footer>
+    <p>&copy; 2024 MI PWA de Notas</p>   
+</footer>           
+   <script src="app.js"></script>
+    
+</body>
+
+</html>
