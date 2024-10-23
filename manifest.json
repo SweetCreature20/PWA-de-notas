@@ -1,6 +1,6 @@
 {
     "name": "App de notas",
-    "short_name": "NotasPWA",
+    "short_name": "Notas",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
