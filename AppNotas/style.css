@@ -1,0 +1,121 @@
+/*Estilos generales */
+*{
+    margin: 0;    
+    padding: 0;    
+    box-sizing: border-box;    
+    font-family: 'Arial', sans-serif;   
+}
+    
+    /* Estilo del body */   
+body {    
+    background-color: #f0f4f8; /* Color de fondo */    
+    color: #333;    
+    display: flex;    
+    flex-direction: column;    
+    min-height: 100vh;   
+}
+ 
+    /* Header */
+    
+header {
+    background-color: #0077b6; /* Azul para el encabezado */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+header p {
+    font-size: 1.2rem;
+    
+}
+/*Centrado del formulario */
+main {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.form-container {
+
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    /* Sombra para dar profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Estilos del formulario */
+
+form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+
+}
+form textarea {
+
+    padding: 10px;   
+    border: 2px solid #007766;    
+    border-radius: 5px;    
+    margin-bottom: 15px;   
+    resize: none;    
+    font-size: 1rem;
+    
+    }
+    
+form button {   
+    background-color: #0096c7; /* Azul vivo para el botón */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;   
+    cursor: pointer;   
+}
+    
+form button:hover { 
+    background-color: #023e8a; /* Oscurecer botón al pasar el mouse */
+}    
+/* Contenedor de las notas */
+    
+#notesContainer {
+    
+    margin-top: 20px;   
+    /* Footer */    
+    footer {    
+    background-color: #0077b6;   
+    color: #fff;  
+    text-align: center;    
+    padding: 10px;    
+    font-size: 0.9rem;   
+}
+
+footer{
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+
+}
+
+}
